@@ -18,11 +18,16 @@ document.addEventListener("DOMContentLoaded", function(){
     })
 })
 
-function searchFish(){
+document.getElementById('random-btn').addEventListener('click', function(){
+    var rand = species[parseInt(Math.random()*species.length)] 
+    searchFish(`${rand["Species Name"]} (${rand["Scientific Name"]})`)
+})
+
+function searchFish(target = document.getElementById('search-input').value){
     console.log("Searched!")
     var found = false
     species.forEach(function(e){
-        if(!found && `${e["Species Name"]} (${e["Scientific Name"]})` == document.getElementById('search-input').value){
+        if(!found && `${e["Species Name"]} (${e["Scientific Name"]})` == target){
             found = true
             
             console.log(e)
