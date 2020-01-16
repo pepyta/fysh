@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fysh</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/modern.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="section valign-wrapper" id="landing">
+        <div class="container row" style="margin-bottom: 0 !important;">
+            <div class="col hide-on-small-only m3"></div>
+            <div class="col s12 m6 center-align">
+                <div class="row center-align">
+                    <img src="img/fysh-logo/vector/default-monochrome-white.svg" style="max-width: 200px;">
+                </div>
+                <div class="row card search hoverable" style="z-index: 2 !important;transition: all .5s linear;">
+                    <div class="card-content" style="padding: 12px 24px !important;">
+                        <div class="row" style="margin-bottom: 0 !important;">
+                            <form id="search" class="scale-transition" style="margin-block-end: 0 !important;">
+                                <div class="input-field col s12"
+                                    style="margin-top: 0 !important; margin-bottom: 0 !important;">
+                                    <i class="material-icons prefix">search</i>
+
+                                    <input type="text" id="search-input" class="autocomplete no-autoinit"
+                                        autocomplete="off"
+                                        style="border-bottom: none !important;box-shadow: none !important;margin-bottom: 0 !important;"
+                                        placeholder="Enter a fish spiece's name!">
+                                </div>
+                            </form>
+                            <div id="loading-video" class="scale-transition scale-out progress">
+                                <div class="indeterminate"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-large white waves-effect waves-dark black-text">Show me a random!</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="detailed-view">
+        <nav style="background-color: transparent; box-shadow: none; -webkit-box-shadow: none">
+            <div class="nav-wrapper">
+                <ul id="nav-mobile" class="left">
+                    <li><a href="#landing"><i class="material-icons left">keyboard_arrow_left</i><span class="hide-on-small-only"> Back to search</span></a></li>
+                </ul>
+                <a href="#" class="brand-logo detailed-view-name hide-on-med-and-up truncate"></a>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row valign-wrapper" style="min-height: calc(100vh - 64px); margin-bottom: 0 !important;">
+                <div class="col s12 l6">
+                    <div class="title detailed-view-name">
+
+                    </div>
+
+                    <div class="no-row-padding">
+
+                        <div class="row">
+                            <b>Taste: </b>
+                            <span id="Taste-text"></span>
+                        </div>
+
+
+                        <div class="row">
+                            <b>Color: </b>
+                            <span id="Color-text"></span>
+                        </div>
+
+                        <div class="row">
+                            <b>Availability: </b>
+                            <span id="Availability-text"></span>
+                        </div>
+
+                        <div class="row">
+                            <b>Source:</b>
+                            <span id="Source-text"></span>
+                        </div>
+
+                        <div class="row">
+                            <b>Texture:</b>
+                            <span id="Texture-text"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 l6">
+                    <img id="spiece-image" class="responsive-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+</body>
+
+</html>

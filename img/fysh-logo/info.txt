@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Aganè 55 (roman) sign
+font link: https://www.graphicpear.com/agane-free-font/
+font author: Danilo De Marco
+font author site: http://www.danilodemarco.com/
+
+
+icon designer: Road Signs
+icon designer link: /roadsigns
+        
+{"bg-gradient-0":"#000A68","bg-gradient-1":"#00C4EE","icon":"#ffffff","font":"#ffffff","slogan":"#ffffff"}
+      
